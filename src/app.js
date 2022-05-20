@@ -1,8 +1,11 @@
 const express = require('express');
 const morgan = require('morgan');
+require('dotenv').config()
+
 const projectRoutes = require('./routes/project.routes');
 const taskRoutes = require('./routes/task.routes')
 const { handleErrors } = require('./middleware/middleProject');
+
 
 const app = express()
 
